@@ -1,3 +1,4 @@
+import Header from "@/app/components/header/Header";
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
 import "./globals.css";
@@ -20,8 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`relative text-_black ${leagueSpartan.className}`}>
-        <div className="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-_white"></div>
+      <body className={`relative text-_white ${leagueSpartan.className}`}>
+        <div className="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-_black"></div>
+        <Header />
         {children}
       </body>
     </html>
