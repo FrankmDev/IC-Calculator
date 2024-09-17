@@ -1,10 +1,11 @@
-import Nav from "@/app/components/header/Nav";
+import Logo from "./Logo";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
-    <header className="py-4 px-3 w-full">
-      <Nav />
+    <header className="flex items-center justify-center p-6">
+      <Logo />
     </header>
   );
 };
+
 export default Header;
